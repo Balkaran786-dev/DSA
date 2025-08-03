@@ -1,0 +1,7 @@
+#they allow us to pass data type as parameter.
+#If we need to use the same operations on a different datatypes,we don't need to write it for diff datatypes.instead,we can use this.
+
+
+for example:
+The data we store in node,To decide of which datatype data we wanna store at compile time,we use template clases.
+

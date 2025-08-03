@@ -1,0 +1,66 @@
+List:
+template class that defines doubly linked list in standard template library(STL).
+
+we can use this list directly in code for doubly linked list without defining anything.
+all the functions,classes are already present in it.
+
+declaration of list:
+#include<list>
+
+list<data_type> list_name;
+
+ex: list<int> Roll_no;
+    list<char> grade;
+    list<int> list1={1,2,3,4};
+
+#Advantages of a list in c++ STL:
+:implementation becomes easy.
+
+
+
+#iterator function:
+begin(),end(),rbegin(),rend(),advance()
+
+list1.begin()- itertor for the first element
+list1.end()- iterator for the position after the last element. 
+list1.rbegin()- iterator for the first element in the reverse iteration.
+list1.rend()- iterator for the poistion after last element in reverse iteration.
+advance(itr,n)- this advances the iterator itr by n places.
+
+
+
+#Traversal through list.
+//using range-based loop
+for(auto num:list1){
+    cout<<num<<endl;  //in every iteration,instances are form for every element present in l1.
+}
+
+ 
+//using iterators
+for(auto itr=list1.begin();itr!=list1.end();itr++){
+    cout<<*itr<<" ";
+}cout<<endl; 
+
+#reverse Traversal
+for(auto itr=list1.rbegin();itr!=rend();itr++){
+    cout<<*itr<<" ";
+}cout<<endl;
+
+
+
+#inserting elements in list.
+list1.insert(itr,value)- insert value before the position of the itr.
+list1.insert(itr,count,value)- insert value count no. of times before the position of the itr.
+list1.insert(itr,start_itr,end_itr)- insert values from [start_itr to end_itr) (but doesn't include the elemnt on end_itr) before the position of itr.
+
+
+#DELETION
+list1.erase(itr)- delete the element pointed to by the itr.
+list1.erase(str_itr,end_itr)- delete all elements from [str_itr to end_itr)
+
+
+#Other member functions of a list container.
+:push_front(val)-insert val in the front of list.
+:pop_front()-removes val from the front of the list.
+:push_back(val)-insert val in the back of list.
+:pop_back()-removes val from the back of the list.

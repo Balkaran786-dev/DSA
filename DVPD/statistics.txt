@@ -1,0 +1,257 @@
+causality vs correlation:
+
+
+statistics:
+descriptive:In which we describe what is already written in the data.
+a kind of summarization,examine,explore.
+
+
+Inferential:
+Try to infer something from the data.
+drawing conclusion.
+
+
+columns are features/attributes.
+rows are cases or observation.
+
+
+mean- ordinal,Nominal- No 
+meadian- ordinal-Yes Nominal-No
+mode- ordinal,Nominal- Yes
+
+
+Measures of central tendency are statistical tools used to summarize 
+a dataset by identifying the center or typical value around which the data points cluster.
+
+
+pareto chart:
+Purpose: Helps identify the most significant factors contributing to a problem, 
+making it easier to prioritize actions.
+
+Bar chart:
+Purpose: Useful for comparing different categories, showing trends over time,
+ or displaying part-to-whole relationships.
+
+Measures of dispersion:
+Range: 
+limitation:
+The range is highly affected by extreme values (outliers). A single outlier can significantly
+increase the range, giving a misleading impression of data variability.
+
+
+
+association:
+
+Stacked bar chart:
+it is similar to bar chart but the bars are divided into different segments,by using different colors.
+A stacked bar chart is a visual tool that helps you see the relationship between different
+ groups and their categories. Here’s how it works in simple terms:
+
+ Visual Comparison:
+
+Each bar represents a main category (like "Men" and "Women").
+The bar is divided into colored segments, each showing a smaller category (like "Coffee," "Tea," and "Juice").
+You can easily see how much of each drink is preferred by men and women.
+Proportions:
+
+The size of each colored segment shows what part of the total preference comes from each drink.
+If one gender has a bigger segment for coffee, it might suggest that they prefer coffee more than the other gender.
+
+
+
+covariance can be used to just see if two variables are positively or negatively
+correlated.but there is no depiction that how much strongly they are realted through the 
+value of covariance as it has units.a covariance of 100 does not indicate a stronger
+ relationship than a covariance of 10 or -10.
+
+
+
+Correlation is a statistical measure that describes the strength and direction of a relationship
+ between two variables. Unlike covariance, correlation is standardized, making it easier to interpret.
+
+sign ka toh same haii covariance vala hi.
+ 1: Perfect positive correlation
+-1: Perfect negative correlation
+0: No correlation
+Values closer to 1 or -1 indicate stronger relationships.
+
+
+0.0 to 0.3: Weak positive correlation
+0.3 to 0.7: Moderate positive correlation
+0.7 to 1.0: Strong positive correlation
+-0.3 to 0.0: Weak negative correlation
+-0.7 to -0.3: Moderate negative correlation
+-1.0 to -0.7: Strong negative correlation
+
+
+Point-biserial correlation:-
+The point biserial correlation coefficient is a special case of the Pearson correlation 
+coefficient used to measure the relationship between one continuous variable and one 
+binary (dichotomous) variable. It helps to determine how the two variables are associated with each other.
+
+Binary Variable: A variable that has only two categories (e.g., yes/no, male/female, success/failure).
+Continuous Variable: A variable that can take an infinite number of values (e.g., height, weight, test scores).
+
+same interpretion of result.
+
+
+Types of Data:
+1. Unstructured data:
+Unstructured data is information that does not have a predefined format or organization. 
+It can be more complex to analyze because it lacks a specific structure.
+
+characteristics:
+No predefined format: Data can come in various forms and doesn't fit neatly into tables or rows.
+Diverse types: Unstructured data can include text, images, videos, and more.
+More challenging to analyze: Requires specialized tools and techniques (like natural language processing or image recognition) to extract meaningful insights.
+
+ex: text,audio,image,signal,video etc.
+
+2.Structured data is highly organized and formatted in a way that makes it easily searchable 
+and analyzable. 
+
+
+characteristics:
+Well-defined format: Data is arranged in rows and columns, making it easy to enter, query, and analyze.
+Predictable: The structure is known ahead of time (e.g., data types, relationships).
+Easily searchable: Because of its organization, structured data can be easily searched using standard queries (like SQL).
+
+
+structured-Numerical or categorical ,
+Numerical - discrete or continuous.
+categorical- Nominal or ordinal
+continuous- interval or ratio
+
+
+
+Anscombe's Quartet consists of four different datasets that have nearly identical simple descriptive statistics (mean, variance, correlation,
+ and regression line) but are very different when visually plotted. The primary purpose of Anscombe's Quartet is to illustrate
+ the importance of graphical data analysis and to demonstrate that summary statistics alone can be misleading.
+
+
+Typical Problems
+Data may be
+• Incomplete: Missing instances/attributes
+• Invalid: Impossible values
+• Inconsistent: Conflicting values
+• Imprecise: Approximated or rounded, and/or
+• Outdated: Old observations
+
+
+
+MISSING VALUES:
+Options:
+• Remove feature completely.
+• Only consider instances that have a value (per feature).
+• Remove all instances that have one of the features missing.
+• Repair missing features (imputation).
+
+
+Binning is the process of grouping continuous data into discrete intervals or "bins."
+ It’s a technique used in data preprocessing to simplify data analysis, especially when
+  dealing with continuous variables. Binning helps to reduce noise, identify patterns, 
+  and improve the interpretability of data.
+
+
+
+•Too few bins may lead to 
+loss of information.
+•Too many bins may lead to 
+sparseness, i.e., bins that are 
+empty or just have a few instances.
+
+Types:
+
+Equal-Width Binning:
+Each bin has the same width or range. For example, if you're binning ages into bins of size 10, the bins might be 0-10, 10-20, 20-30, etc.
+
+Equal-Frequency Binning:
+Each bin contains approximately the same number of data points. For example, if you have 100 data points and want 4 bins, each bin would contain 25 data points, but the width of the bins might vary.
+
+Custom Binning:
+You can define your own bin edges based on domain knowledge or the distribution of the data. For example, defining income categories such as low, middle, and high.
+
+
+
+Preparing data for analysis:-
+Preparing data for analysis is a critical step in the data analysis process, often referred to as data preprocessing.
+It involves cleaning, transforming, and organizing raw data to make it suitable for analysis. 
+
+Sampling:
+
+Sampling is the process of selecting a subset (a sample) from a larger population 
+to make inferences about the entire population. Since analyzing the entire population 
+can be time-consuming and costly, sampling allows us to gather insights while being
+efficient in terms of time and resources.
+//types:
+see in ppt;
+
+
+AVOID GIGO:
+GIGO stands for "Garbage In, Garbage Out," a concept primarily used in computer 
+science and information technology. It emphasizes that the quality of output 
+from a system or process is directly related to the quality of the input. In 
+other words, if incorrect or poor-quality data is fed into a system, the output
+ will also be flawed, regardless of how sophisticated the system might be.
+
+
+Data preprocessing:
+what to do?
+data quality should be good,must have followiing characteristics:
+1.Accuracy
+2.Consistency
+3.Timeliness
+4.interpretability
+5.completeness
+
+concrete Problems:
+1.Missing values.
+2.Outliers.
+3.Semantic Problems.
+
+
+Missing Values Why?
+• Past data get corrupted due to improper maintenance.
+• Failure in recording due to human errors.
+• User not provided values intentionally
+
+
+
+why to handle missing values?
+~ Machine learning algorithms.
+~ KNN and Naive Bayes support data with missing values but are not efficient.
+
+
+
+types of outliers:
+1.global: These are individual data points that lie far outside the range of the majority of data.
+2.Contextual Outliers: These are data points that are considered outliers only within a specific context or condition.
+ They may not be outliers in a different context.
+3.collective:A group of related data points that, as a collective, deviate from the expected pattern,
+ even if individual points may not be outliers on their own.
+
+
+Noisy values:
+ Noisy values refer to random errors or variations in the data that do 
+ not represent true observations.
+
+
+
+::Label encoding is a method used to convert categorical data into numerical values by assigning a unique integer to each category.
+  this type is only used for ordinal categorical data type.
+
+::One-hot encoding is a method used to represent categorical variables as binary vectors.
+Identify all the unique categories in the categorical variable.
+Create a new binary feature (column) for each unique category.
+Assign 1 to the column corresponding to the data point's category and 0 to the other columns
+
+::Binary encoding : the number swe assigned to diff categories are 
+further converted into binary numbers.
+
+
+Min-Max Normalization: Scales the data to a fixed range, typically [0, 1], based on the minimum and maximum values in the dataset.
+Z-Score Normalization: Standardizes the data by subtracting the mean and dividing by the standard deviation, leading to a mean of 0 and standard deviation of 1.
+Decimal Normalization: Shifts the decimal place to normalize values, without changing the distribution shape drastically, and is less commonly used than min-max or z-score normalization
+
+
+

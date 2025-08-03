@@ -1,0 +1,119 @@
+categorical variable:A categorical variable is a type of variable that can take on one of a limited, 
+fixed number of possible values, often representing distinct groups or categories. 
+Unlike numerical variables, categorical variables are qualitative and do not have a mathematical or logical ordering between their values.
+
+
+individuals:individuals can be people, objects, or any other entities for which data is recorded, depending on the context of the research or analysis.
+
+
+1.Categorical data types represent data that can be divided into distinct groups or categories. 
+These data types are typically used when the variable represents labels, classifications, or groups
+that don't have a natural numerical order (in the case of nominal data) or where the order exists but the distance 
+between categories is not defined (in the case of ordinal data).
+2 types :
+**Nominal Data:
+Represents categories that have no inherent order or ranking.
+Examples:
+Gender (Male, Female, Non-binary)
+Eye color (Blue, Brown, Green)
+Country of residence (USA, UK, Canada)
+
+
+**Ordinal Data:
+Represents categories that have a specific, meaningful order, but the intervals between values are not consistent or known.
+Examples:
+Education level (High School, Bachelor’s, Master’s, Ph.D.)
+Satisfaction rating (Poor, Fair, Good, Excellent)
+
+ 
+2.Numerical Data
+Definition: Data that represents measurable quantities and can be either discrete or continuous.
+Types:
+Discrete: Countable data (e.g., number of books, number of cars).
+Continuous: Data that can take any value within a range (e.g., weight, height, temperature).
+Common Visualizations:
+Histograms: For displaying the distribution of continuous data.
+Line Charts: Ideal for tracking changes over time or continuous trends.
+Scatter Plots: Used to explore relationships between two continuous numerical variables
+
+
+3.Time series data.
+
+
+
+
+different plot for diff purpose:
+1.relationships: scatter plot(relationship between two variables),Bubble chart(Relationship between x & y & Bubble size).
+2.Comparison: Bar chart,line chart
+3. distribution: histogram,Box plot
+4. composition: Pie chart,stacked bar chart,stacked area chart.
+
+
+characteristics of data:
+1. Plentiful
+2. Beautiful
+3. Insightful ex pollution in china.
+4. powerful
+5. can be deceitful
+
+
+
+The Ponzo illusion is a well-known optical illusion that illustrates 
+how the human brain interprets depth and perspective.In the Ponzo illusion, 
+two horizontal lines of equal length are placed over a background of converging lines 
+The converging lines create a sense of depth, as they mimic the appearance of parallel 
+lines converging in the distance due to perspective. Because of this, 
+the top line appears longer than the bottom line, even though both lines are actually the same length.
+This illusion occurs because our brain interprets the converging lines as representing depth, and 
+thus assumes that the top line is farther away.
+
+
+Tufte's
+:Audience is intelligent
+:Convince and convey the readers.
+• Show the data
+• Maximize data-ink ratio
+• Erase non data ink (as much as possible)
+• Erase Redundant data ink
+• Avoid Chart junk (moire, ducks)
+• Try to increase the density of data ink
+• Graphics should tend to be horizontal
+
+
+
+Tufte’s principles are widely respected in the field of data 
+visualization because they emphasize clarity, efficiency, and truthfulness,
+ ensuring that visual representations of data are both beautiful and informative
+
+
+1.Maximise data ink ratio
+2.erase Redundant data
+3.emphasize on data  variation,not on style variation.
+4.Integarte words number images.
+5.Avoid chart junks
+6.Tell the truth 
+
+
+Some Chart Rules
+• Bar charts must start at zero [most axis will start at zero]
+• Avoid too many pie slices
+• Respect part of a whole (in pie charts)
+• Show the data: small multiple, aggregation, transparency.
+• Chart must be self-explanatory
+ Explain encoding (what means what)
+• Label Axes
+• Include units
+• Circle size by area, not diameters
+
+
+data visualization:
+form,intension,user experience
+or
+idea illustration
+idea generation
+visual confirmation
+visual discovery
+
+
+diff between Infographics and data visualization.
+

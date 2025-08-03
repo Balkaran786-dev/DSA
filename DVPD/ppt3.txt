@@ -1,0 +1,217 @@
+Geovisualization:
+refers to the use of visual representations to interpret and analyze geographic data. 
+It's a broad field that combines elements of geography, cartography, and data science,
+ often using Geographic Information Systems (GIS) to create maps, graphs, and interactive 
+ models that display spatial patterns and relationships.
+
+
+choropleth:
+Splits area into divisions
+A choropleth map is a thematic map where geographic areas are colored or
+shaded in proportion to a statistical variable. 
+
+
+A cartogram is a type of map where geographic regions are resized according to 
+a specific statistical variable, such as population, economic output, or 
+disease prevalence. Unlike traditional maps, cartograms distort the size
+and shape of regions to represent data, making them highly effective for 
+visualizing disparities or patterns in the data.
+
+
+heatmap:clustering for attention.
+A heatmap is a type of data visualization that uses colors to represent 
+the intensity or density of data points within a given area. In geographic contexts
+, heatmaps are often used to show spatial patterns of data, such as population density,
+ crime rates, or business locations
+
+
+isopleths:
+An isopleth map (or contour map) is a type of map that uses continuous lines (called isopleths)
+to represent areas of equal value. These maps are particularly useful for visualizing phenomena 
+ that vary continuously across a geographic area, such as temperature, altitude, pressure, or pollution levels
+
+
+heirarchy of visual understanding 
+ Low-Level Understanding (Basic Visual Elements)
+What it involves: The first thing we notice in a data visualization are the basic visual elements like colors, lines, shapes, and points.
+Example: When you look at a bar chart, the first things you notice might be the heights of the bars, their colors, or the axes.
+2. Mid-Level Understanding (Patterns and Relationships)
+What it involves: After noticing the basic elements, the brain starts to recognize patterns or trends. It looks for relationships between different data points, such as whether values are going up, down, or staying constant.
+Example: You might now see that one bar is taller than the others, or a line graph is showing an upward trend over time.
+3. High-Level Understanding (Insights and Meaning)
+What it involves: At this level, you begin to extract insights and meaning from the visualization. You understand the story the data is telling and connect it to the broader context.
+Example: You realize that sales are increasing each year or that one category is outperforming others, and you can interpret what that means for the business.
+
+data->information->knowledge->wisdom.
+
+Characteristics of data
+
+• Data Semantics
+• Data Behavior
+• Data Type: Level or scale of measurement that describes the nature of information
+within numbers assigned to variables.
+• Derived Data
+
+
+for data Semantics and data Behavior
+Inherent to data and not decided or modified 
+in the process of creating visualization.
+
+for datatype and Derived data
+Part of decision process. Create, define and 
+modify data structure and derive data.
+
+
+DAta semantics:
+
+data semantics in data visualization is about making sure the data in charts or graphs is understandable 
+and meaningful to the viewer. It helps you know what the numbers, colors, and shapes in a visualization
+actually represent and how they relate to each other.
+
+vahi heirarchy vale points..
+what data means:
+how to read:
+connections:
+clear and easy to understand:
+
+
+How to decode a graph?
+Cleveland's three visual operation of pattern perception
+1. DETECTION:
+This is the first operation where we recognize the presence of a visual 
+feature or pattern in the visual field. It's about noticing the existence of a pattern,
+shape, or object within a given graphic.
+
+
+stroop effect:
+The Stroop Effect shows how our brains can get confused when doing certain tasks, 
+especially when there is a conflict between automatic and conscious thinking.
+
+Here’s a simple example: Imagine you see the word "RED" written in blue ink. 
+You’re asked to say the color of the ink (which is blue), but your brain wants
+ to automatically read the word (which says "RED"). It takes longer for you to
+  say "blue" because your brain has to ignore what the word says and focus on
+   the ink color instead.
+
+Automatic task: Reading words is easy for most people and happens automatically.
+Controlled task: Saying the color of the ink (not the word) takes more effort and attention.
+When the word and the ink color don’t match, it slows down your response because your brain gets a bit confused.
+
+Popout:
+Different in color and shape or in motion are easily visible.
+Make salient information pop out
+
+
+Weber's Law:
+we judge based on relative,not absolute difference.
+
+
+2.ASSEMBLY:
+ After detecting individual components, assembly refers to the process of
+ mentally grouping these features to form larger, more meaningful patterns. 
+ It involves integrating different elements of a visual display into a coherent whole or pattern.
+
+*Emergence: The mind sees the whole and then the parts. It often sees 
+more than what is stated.
+
+*Invariance: The mind recognizes simple objects independent of 
+rotation, translation, scale, deformations and lighting.
+
+*Proximity: Elements that are closer together are perceived to be more 
+related than elements that are farther apart.
+
+*Similarity: Elements that are similar are perceived to be more related 
+than elements that are dissimilar.
+
+*Enclosure: Elements that are enclosed by anything are perceived as 
+belonging together.
+
+*Continuity: The mind continues visual, auditory and kinetic patterns.
+
+*Closure: The mind perceives a set of individual elements as a single,recognizable pattern.
+
+*Figure-ground: The elements are perceived as either figures or ground
+
+*Connection: Elements that are connected are perceived as belonging together.
+
+
+
+
+#Semantic encoding
+Semantic encoding refers to the process of encoding information by focusing on 
+its meaning, rather than on its sound or visual characteristics. It involves 
+storing information based on what it represents or its significance.
+
+
+
+
+3.ESTIMATION:
+
+Three levels
+• discrimination X=Y, X!=Y 
+Description: This is the simplest level of estimation, where the user is asked to determine whether two values are the same or different.
+Example: In a bar chart, you might be asked if two bars are of equal height or not.
+
+• Ranking X>Y, X<Y
+Description: At this level, the task is to determine which value is greater or smaller when comparing two data points.
+Example: Comparing the heights of bars in a bar chart to see which one is taller.
+
+• Rationing X/Y=?
+Description: This is the most complex level, where the user is asked to estimate the ratio between two values.
+ Instead of just determining which value is larger, the task is to figure out how much larger or smaller one value is in comparison to another.
+Example: In a chart, estimating that one bar is twice as tall as another or determining how much larger one pie slice is compared to another.
+
+
+
+Here are the common levels of estimation in order of accuracy:
+1.Position Along a Common Scale
+Description: Estimating values based on how high or low data points are positioned along a shared axis 
+2. Position Along Non-Aligned Scales
+Description: Estimating values based on positions that are not on the same axis or baseline.
+3.Length
+Description: Comparing lengths of lines or bars that don’t share a common baseline.
+4.Angle
+Description: Estimating the size of angles, such as in pie charts.
+
+
+
+
+##**Tufte’s design principles for graphical excellence.
+1.Maximize the data-ink ratio, within reason.
+• Contain as much data as possible while also using as little pixels possible.
+• Graphic’s ink devoted to the non-redundant display of data-information.
+   Data ink ratio = Data ink/Total ink used in graphic
+• Avoid chart junk.
+
+
+2.Mobilize every graphical element, perhaps 
+several times over, to show the data.
+
+The danger of multifunctioning elements is that they tend to generate
+graphical puzzles, with encodings that can only be broken by their
+designer.
+
+we should try to make all present graphical elements
+data encoding elements. We must make every graphical element
+effective.
+
+
+3.Maximize data density and the size of the 
+data matrix, within reason
+
+
+4.Establish context
+• Provide spatial, temporal and numerical context.
+
+
+5.Compare and contrast, utilize layering and 
+separation
+
+
+6.Escape flatland, use small multiples, 
+parallel sequencing
+• Data is multivariate doesn’t necessarily mean 3D projection. How can 
+we enhance multivariate data on inherently 2D surface?
+• We can use small multiple graphs pr parallel sequencing skill.
+
+7.Integrate image, number and text.

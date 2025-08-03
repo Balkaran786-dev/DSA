@@ -1,0 +1,16 @@
+REASONS:- why no virtual constructor exist?
+
+1.When an object is created, the type of the object is already known at compile time, 
+so there's no need for the polymorphic behavior that virtual provides.
+
+2.Virtual functions work by looking up the appropriate function in a vtable, 
+but an object does not have a vtable until it is constructed.
+
+
+
+why virtual destructor is present and used?
+A virtual destructor is essential in C++ when dealing with inheritance and polymorphism.
+It ensures that when an object is deleted through a pointer to a base class, 
+the destructor of the derived class is called first, followed by the base class destructor.
+This guarantees that the entire object is properly destroyed, preventing resource leaks
+and undefined behavior.

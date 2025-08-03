@@ -1,0 +1,78 @@
+##unordered set:
+->values are stored in unordered fashion.
+->unique values,values will be defined by itself,
+values cannot be modified inside the set.
+->Insertion,Deletion,Search all have avg time complexity-o(1).
+ because unordered set are internally implemented by hashing.
+
+MEMBER FUNCTION OF UNORDERED_SET:
+1.Insert
+     single element- o(1) avg
+                     o(N) worst,it happens when the number elements of unordered set becomes greater than its capacity.So,we need to rehash 
+                           all elements and insert them in a bigger size unordered set. 
+
+     Multiple elements- o(n) avg, where n is no. of elements being inserted.
+                      - o(n*(N+1)) worst,where n is no. of elements being inserted,N is size of unordered set.
+
+2.Deletion 
+     erase(value),erase(position),erase(start_itr,end_itr)
+
+     single_ele-o(1) avg     multiple_ele-o(n),where n is no.of elements to be deleted.
+               -o(N) worst
+3.find()
+     o(1) -avg
+     o(N) -worst
+
+4. count()
+     o(1) -avg
+     o(N) -worst
+(hashing:)
+5. load_factor- size_of_unordered_set/bucket_count;
+
+6. rehash(x)- sets the no.of buckets to x or more.
+              o(N) avg
+              o(N**2) worst
+
+
+all other function are similar to ordered set function
+
+##Multiset:
+->it can store duplicate values.
+-> values stored in ordered manner(either inc or dec),value
+ will be identified by itself,values cannot be modified in mutliset.
+
+MEMBER FUNCTION OF MULTISET:
+1.Insert-  o(logN)
+2.deletion- erase(value) - o(logN)    1 2 2 3 4  erase(2)- gives us 1 3 4
+            erase(position) - o(logN)
+            erase(start_pos,end_pos) - o(N)
+
+3. find()- o(logN)  returns lowerbound of element if found else end iterator
+
+4.count()- o(k+logN),where k is no. of occurrences 
+5.lower_bound()-o(logN) 
+                 returns an iterator to the first ocuurence of the given
+                 key else returns an iterator to the next greater ele.If the 
+                 given key is greater than the maximum value of the set, it returns end iterator.
+6.upper_bound()-o(logN) 
+                  returns an iterator to the next greater ele of the specified key.if the given 
+                  key is equall to or greater than the maximum ele of set,it returns end iterator.
+
+
+##unordered_Multiset
+->allows duplicate values
+->values are not ordered.
+->values are identified by itself.
+->values cannot be modified.
+
+MEMBER FUNCTION OF UNORDERED_MULTISET:
+1. Insert: 
+    single ele-  o(1) avg   o(N) worst
+    multiple ele-  o(n) avg   o(n*(N+1)) worst.
+
+2. deletion: 
+    erase()  
+    single_ele-o(1) avg     multiple_ele-o(n),where n is no.of elements to be deleted.
+               -o(N) worst
+               where N is size of our unordered_multiset.
+

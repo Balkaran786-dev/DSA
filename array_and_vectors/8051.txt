@@ -1,0 +1,75 @@
+q1
+ORG 0000H         ; Start of program memory
+
+MOV A, #00H       ; Initialize counter to 0
+MOV R0, #00H      ; R0 used as direction flag (0=UP, 1=DOWN)
+
+MAIN:
+    MOV P1, A     ; Output current value of counter to PORT1
+    ; Delay loop
+    ACALL DELAY
+
+    ; Check direction: UP or DOWN
+    CJNE R0, #00H, DOWN_COUNT  ; If R0 ≠ 0 → Go to down count
+
+    ; Up Counter
+    INC A                  ; Increment accumulator
+    CJNE A, #0FFH, NEXT    ; If A ≠ 255, continue
+    MOV R0, #01H           ; Reached max → change direction to down
+    SJMP NEXT
+
+DOWN_COUNT:
+    DEC A                  ; Decrement accumulator
+    CJNE A, #00H, NEXT     ; If A ≠ 0, continue
+    MOV R0, #00H           ; Reached 0 → change direction to up
+
+NEXT:
+    SJMP MAIN              ; Repeat
+
+; Simple delay loop
+DELAY:
+    MOV R2, #255
+    DEL1: MOV R3, #255
+    DEL2: DJNZ R3, DEL2
+          DJNZ R2, DEL1
+    RET
+
+END
+
+
+
+q3
+
+
+ORG 0000H
+
+; === Serial Port Initialization ===
+MOV TMOD, #20H     ; Timer1 Mode2 (8-bit auto-reload)
+MOV TH1, #-3       ; 9600 baud for 11.0592MHz → -3 = 0xFD
+MOV SCON, #50H     ; Serial mode 1, 8-bit, REN=1
+SETB TR1           ; Start Timer1
+
+
+; === Send String ===
+MOV DPTR, #MSG     ; Load address of string
+SEND_LOOP:
+CLR A
+MOVC A, @A+DPTR    ; Get character from string
+JZ DONE            ; If zero (null terminator), end
+ACALL TRANSMIT
+INC DPTR
+SJMP SEND_LOOP
+
+DONE: SJMP DONE    ; Infinite loop
+
+; === TRANSMIT Subroutine ===
+TRANSMIT:
+    MOV SBUF, A         ; Load character into serial buffer
+WAIT: JNB TI, WAIT      ; Wait until transmission complete
+    CLR TI              ; Clear Transmit Interrupt flag
+    RET
+
+; === String to Send ===
+MSG: DB 'Hello, PC!', 0
+
+END

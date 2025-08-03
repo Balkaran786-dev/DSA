@@ -1,0 +1,22 @@
+How map data is stored
+Raster:
+What it is: Made of tiny squares called pixels.
+Example: Think of a photo taken with your phone. If you zoom in, you see tiny squares (pixels).
+Scaling: If you make it bigger, it gets blurry or pixelated.
+Best for: Photos,images,JPEG
+
+Vector:
+What it is: Made of lines and shapes defined by math, not pixels.
+Example: Think of a logo. You can make it as big or small as you want, and it always looks clear.
+Scaling: Can be resized without losing quality.
+Best for: Logos, icons, and simple graphics,CSV.
+
+on map,you can show nodes,relations,ways.
+figure and ground.
+traffic
+popular areas
+
+
+Dots + opacity
++ color + size
+

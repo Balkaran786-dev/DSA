@@ -1,0 +1,200 @@
+1. SR (Set-Reset) Flip-Flop
+Working Principle:
+
+The SR flip-flop has two inputs: S (Set) and R (Reset).
+When S is high and R is low, the flip-flop sets (output Q = 1).
+When S is low and R is high, the flip-flop resets (output Q = 0).
+If both S and R are low, the output retains its previous state (no change).
+If both S and R are high simultaneously, the output is undefined, leading to an indeterminate state.
+Advantages:
+
+Simple design and easy to understand.
+Useful in basic latch circuits and simple memory elements.
+Disadvantages:
+
+The undefined state when S and R are both high can be problematic.
+Circuit Diagram:
+
+The most common form is a cross-coupled NAND or NOR gate configuration.
+
+
+2. JK Flip-Flop
+Working Principle:
+
+The JK flip-flop is an improvement over the SR flip-flop and resolves the indeterminate state issue.
+It has two inputs: J and K.
+When J is high and K is low, the flip-flop sets (Q = 1).
+When J is low and K is high, the flip-flop resets (Q = 0).
+When both J and K are high, the output toggles (Q switches from 1 to 0 or 0 to 1).
+When both J and K are low, the output remains unchanged.
+Advantages:
+
+Eliminates the undefined state of the SR flip-flop.
+Versatile, as it can function as an SR flip-flop, a D flip-flop, or a T (toggle) flip-flop.
+Disadvantages:
+
+Slightly more complex than the SR flip-flop.
+Requires more gates to implement.
+
+Circuit Diagram:
+
+Typically implemented using NAND gates and feedback connections
+
+
+3. D-Flip Flop
+Working Principle:
+
+The D flip-flop has a single data input D and a clock input.
+On the rising (or falling) edge of the clock, the input D is transferred to the output Q.
+The output remains constant until the next clock edge.
+Ensures that only one input (the data input D) can affect the output, preventing indeterminate states.
+Advantages:
+
+Simple and easy to use for data storage.
+Ideal for applications requiring data synchronization.
+Prevents the issue of indeterminate states as seen in the SR flip-flop.
+
+Data Transfer:
+When the clock signal transitions from low to high (or high to low for negative-edge triggering), the value present at the D input is transferred to the output Q.
+The output Q remains stable and unchanged until the next triggering edge of the clock signal, regardless of changes in the input D.
+Disadvantages:
+
+Less versatile than the JK flip-flop in terms of additional functionalities.
+Circuit Diagram:
+
+Commonly implemented using a combination of NAND or NOR gates or as a master-slave configuration to ensure edge triggering.
+
+
+
+
+
+
+
+**A logic gate is an electronic circuit that performs a basic logical operation on 
+one or more binary inputs to produce a single binary output. It is the building 
+block of digital circuits.
+
+XOR Gate - Outputs 1 if inputs are different.
+XNOR Gate - Outputs 1 if inputs are the same (NOT + XOR).
+
+
+7404
+7408
+7432
+7402
+7400
+7486
+74266
+
+Boolean laws.
+
+
+
+applications:
+half adder:
+two bit addition,digital counters
+
+full adder:
+three bit addition,ALUs
+
+half subtractor:
+two bit subtration without any borrowin,comparators
+
+full subtractor:
+ALUs
+
+
+
+Why BCD Doesn't Handle Numbers Greater Than 9?
+BCD is a hybrid of binary and decimal systems. EEach 4-bit group represents a single decimal digit (0–9). The binary representations 
+1010
+1010 (10) to 
+1111
+1111 (15) in 4 bits are invalid in BCD, as they do not correspond to any valid decimal digit.
+
+
+Why Add 6?
+The decimal equivalent of 
+6
+6 compensates for the gap between the highest valid BCD value (
+9
+9) and the smallest invalid binary value (
+10
+10).
+Mathematically: 
+10
+−
+4
+=
+6
+10−4=6 (in binary: 
+1010
+−
+0100
+=
+0110
+1010−0100=0110).
+
+
+BCD applications:
+two add two bcds
+calculators
+digital clocks
+
+
+sr :
+1.Basic Memory Storage:
+
+Stores a single bit of data (1 or 0) until it's reset or updated.
+
+2.Data Latches:
+
+Used to temporarily hold data in systems like registers or buffers.
+
+3.control circuits
+
+
+jk: 7476
+1.remove toggling situation
+2.counters
+3.shift registers
+
+d flip flop: 7474
+1.data memory storage
+2.counters
+3.shift registers
+4.synchronization
+
+
+
+Registers:
+A group of flip-flops used to store multiple bits of data. 
+Registers are used for temporary data storage and transfer in digital systems.
+
+Counters:
+Sequential circuits that count pulses or events,incrementing or decrementing in binary,
+
+
+Shift registers:
+ series of flip-flops connected in sequence to shift data bits left or right
+ , used for data transfer, storage
+
+
+
+Multiplexer (MUX):
+
+A combinational circuit that selects one input from multiple inputs and forwards it to a single output, based on select lines.
+Demultiplexer (DEMUX):
+
+A combinational circuit that takes a single input and routes it to one of several outputs, based on select lines.
+
+Multiplexer:
+1.Tv exmple
+2.Routes control signals in microprocessors or controllers.
+
+demux:
+1.Communication Systems:
+Splits a single data stream into multiple data streams for routing.
+
+2.Address Decoding:
+Decodes memory addresses in microprocessors.

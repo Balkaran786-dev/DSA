@@ -1,0 +1,8 @@
+#infix expression: written in the form of operand operator operand.
+ex: A+B-C, a+(b*c/d)-e;  usually solved by BODMAS rule.
+
+#postfix expression:(reverse polish notation) in which operators are written after the operands.
+ex: ABCD++-, solved as A-(B+(C+D));
+
+#prefix expression:(polish notation) in which operators are written before the operands
+ex: ++-ABCD, solved as ((A-B)+C)+D;

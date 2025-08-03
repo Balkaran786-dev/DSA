@@ -1,0 +1,35 @@
+STL:standard template library
+
+#set of template classes for implementing commonly 
+used data structures and functions
+
+#it gives a lot of template classes for different data structures and functions
+so that we can directly use it in code without actually defining those.
+ex:
+lists,set,map,queue,stacks etc.
+vector is also a part of STL.
+
+3 major components of STL:1.Containers 2.iterators 3.algorithm
+1.Containers: use template classes
+object used to hold data of the same type.
+ ex: vector: class that defines a dynamic array.
+     list: class for doubly linked list
+     map: used to store unique key value pairs.
+     set: used to store unique values.
+
+2.Iterators: object points to an element in container.
+->used to iterate/traverse the container.
+->pointers like entities.
+how to define it by example:
+
+ex: vector<int> V={1,2,3,4,5};
+    vector<int> :: iterator itr;
+    itr.begin()   //it gives us 1
+
+3.Algorithm: use template functions
+functions that are used to manipulate data in the container.
+ex: sort(): in vectors,sort(v.begin(),v.end())
+    min() : min(a,b)
+    max() : max(a,b)
+
+

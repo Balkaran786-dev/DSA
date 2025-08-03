@@ -1,0 +1,60 @@
+Dynamic programming: Optimisation technique on bruteforce
+
+: if you already know about somthing,don't recompute it.
+: reuse more , repeat less 
+
+
+You need to identify two things in a problem:
+1. Overlapping subproblem:
+   if you have a already computed subproblem which is repeating again n again
+   in the same problem,then that is the case of overlapping or repeating subproblem.
+
+
+2. Optimal substructure:
+   if you have divided a bigger problem into smaller subproblems,
+   and you are able to find the optimal solution for all those subproblem and with help of 
+   those,you finally find the solution of the bigger problem,then that is optimal substructure.
+
+
+Greedy VS DP
+: greedy depends only on optimal substructure.But DP depends both on optimal substructure and overlapping subproblem.
+: DP works as an optimisation on bruteforce,hence it goes on every possible choice and if there comes some repeation,it will avoid it.
+whereas,In Greedy,we take the most best choice in the first position.
+: DP focus on global optimum whereas Greedy focus over local optimum. 
+
+%%% 
+sometimes,you feel like greedy solution is more optimised then DP,but generally The problem with greedy
+is that their solution are not optimal or correct but if they are,you need to prove them,whereas,in DP,you just go on 
+every possible choice and if there comes some repeation,it will handle it.
+
+Where to use DP?
+wherever you have optimal substructure and 
+overlapping subproblem.
+
+what are the various approaches of DP?
+Top down appraoch (Memoization)
+Bottom up approach (Tabulation)
+
+How to use DP?
+1.state of the DP.
+2.how the subproblems are related/Identify formula between them.
+3.storing the results once completed.
+
+1.
+so,basically your states are your subproblems.
+so,define the state means define a subproblem.
+it means by using which methodology you can uniquely identify your subproblem 
+
+
+So,in fibonacci series
+based on the value of n,we can uniquely identify the state.
+
+total N+1 unique states honge usme.
+
+2.how subproblems are related / define the formula that relates the subproblems and the bigger problem.
+we know f(n)=f(n-1)+f(n-2);
+
+3.to store the result once it is computed...
+so,in fibonacci,
+we can form an array of size n+1,
+because for n,we have n+1 subproblem.

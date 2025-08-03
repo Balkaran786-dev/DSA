@@ -1,0 +1,54 @@
+:In circular linked list, tail node is connected to our head node.
+    means,:-  tail->next=head;
+It can be singly or doubly as well.
+
+# Advantages of circular over singular.
+:we can start traversing from any node to print all nodes until we reach visited node.
+:when we have to traverse the linked list in circular fashion,we use this.
+
+#implementation of node similar to singular or doubly node.
+
+TRAVERSAL :
+:take temp pointer at head.
+:move it ahead until you reach a node that has head in its next.
+OR
+ Node* temp=head;
+ do{
+    cout<<temp->val<<"->";
+    temp=temp->next;
+ }while(temp!=head);
+
+
+
+INSERTION AT START.
+:create new_node
+:create a tail node.move it until you reach tail->next=head.
+:new_node->next=head;
+:tail->next=new_node;
+:head=new_node;
+
+
+INSERTION AT END
+:create a new_node;
+:create a tail node.move it until you reach tail->next=head.
+:tail->next=new_node;
+:new_node->next=head;
+
+INSERTION AT Kth POSITION
+:insertion at kth position is similar to singular linked list
+
+DELETION AT START
+:create a tail node.move it until you reach tail->next=head.
+:create temp=head;
+:head=head->next;
+:tail->next=head;
+:free(temp);
+
+DELETION AT END
+:create tail node.take it to the second last node i.e tail->next->next=head;
+:create node_to_del=tail->next.//last node that is to be deleted
+:tail->next=head;
+:fee(node_to_del);
+
+DELETION AT Kth POSITION
+:deletion at kth position is similar to singular linked list

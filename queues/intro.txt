@@ -1,0 +1,34 @@
+we know there was concept of LIFO in stacks.
+
+here in queues,
+we have FIFO(first in first out) or FCFS(first come first serve) in queue.
+jo pehle aya,wo pehle process hoga.
+
+#queue is a data structure that supports FIFO.
+#queue is a linear data structure.
+
+$operations on queues:
+::Enqueue: this operation will help us to add a new client in the queue.
+::Dequeue: this operation will help us to remove a new {means(jo sabse pehle add hua hai)} element in the queue.
+
+
+
+::Is_full: tells if queue is full.
+::Is_empty: tells if queue is empty.
+::front: gives the first ele in the queue or the ele that came first.
+::size: gives us current size of the queue .
+
+
+front:trackes the first ele.removal is done from here.
+back: where any new ele is added.
+
+$Types of queues:
+#Simple queue: in which front points to the ele that is added firstly in the queue.
+               Through front,we access our first element.
+               elements are removed from front and added from back.
+#Priority queue: in which front is pointing to some customised ele based on some priorty.ex,Largest or smallest ele etc.
+#circular queue: in which front is present after the back.
+#Double ended queue/Deque: in which insertion and deletion can be done from both sides i.e front and Back.
+
+
+

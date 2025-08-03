@@ -1,0 +1,45 @@
+Generic Trees:
+every node has data and list of references to its children nodes.
+No Boundation on number of childs a node can have.
+
+                a
+  b   c      d     e   f   g
+        h   i  j              k
+
+
+implementation of node class:
+class Node{
+    int data;
+    vector<Node*> children;  //will contain references to all of the child nodes of this node
+
+};
+
+//if children.size()==0  this means this node is a leaf node.
+
+TRAVERSALS:
+1. DFS:(depth first search) we first cover the depth then the breadth.
+2. BFS:(Breadth first search) we first cover the breadth then the depth.
+
+In DFS:
+1. Preorder Traversal:                                                  A
+  :print root                                                      B    C    D
+  :recursively call for all of its child nodes.(L->R)            E   F       G
+ex: A B E F C D G
+
+2. Inorder Traversal:
+   :recursively print all the child nodes except the last child.
+   :print root
+   :check if size of (root->children.size()>0) then,recursively call for last child. 
+   we check this condition because may be some nodes doesnot have even a single child
+ex: E B F C A D G
+
+3. Postorder:
+   :recursively call for all the child nodes.
+   :print the root.
+ex: E F B C G D A 
+
+BFS:
+Levelorder traversal:
+we will use queue here.
+everything is same . Its just that vahan sirf left right child add krte thee,yahan saare child ek node ke add krenge.
+

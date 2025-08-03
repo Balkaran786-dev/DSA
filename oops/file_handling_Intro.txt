@@ -1,0 +1,15 @@
+::file is a collection of data that you can store on the disk.
+
+::stream is basically an interface that transfer data from file to c++ program
+or c++ program to file.
+
+input stream:jisse data liya jata hai,receive kiya jata hai.
+output stream:jise output diya jata hai and it shows it on screen.
+
+In file also,we have two streams:
+::input stream: when we want to read from the file,means into the file. ek 
+jariya hai jisse data ayega mere program ke andr
+
+::output stream: when we write in the file. ek 
+jariya hai jisse data jayega mere file ke andr
+

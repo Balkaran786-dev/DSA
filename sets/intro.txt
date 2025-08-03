@@ -1,0 +1,86 @@
+why to use set?
+::where we need to store unique values.
+In set,we can't store multiple data with same value.
+
+@SET:
+->Set is an STL(Standard Template Library) container used to store unique values.
+->It stores values in ordered state.(increasing/decreasing)
+->There is no indexing to access an element.Elements are identified by
+their own values.
+->Once value is inserted in a set,it can't be modified or updated as it becomes a constant.we can remove 
+and then insert some value at the same place because order remains sorted ,but we can't modify any as it is.
+
+@ADVANTAGES OF SET:
+->we use it where we need to store unique values.
+->we use it where we need to store value in ordered manner.
+->these are of dynamic size.there are no overflowing errors.
+->these are faster than some other data structure.
+as insertion,deletion,search operation are of complexity-o(logN).
+Insertion,deletion are implemented by BST(Binary Search trees) specifically 
+Red Black tree. searching is done by Binary search Algorithm.
+
+
+@DISADVANTAGES OF SET:
+->cannot access elements using indexing.
+->it uses more memory than array.
+->not suitable for large datasets.
+
+
+@DECLARATION OF A SET:
+:: include<set>
+:: set<data_type> set_name;
+ex: set<int> set1={2,4,1,8,6};
+By default,values are stored in increasing order.
+
+
+To store them in decreasing order,we declare it as:
+  set<data_type,greater<data_type> set_name;
+
+
+@INSERTION:  This insert function is of o(logN) complexity.
+::set_name.insert(value); 
+ex: set1.insert(4);
+    set1.insert(3);  values will always be stored in increasing order.
+this function returns an iterator to the inserted value.
+
+
+@SIZE:
+set_name.size() -> gives size of the set.
+
+
+@TRAVERSAL OF A SET:
+ set<data_type>::iterator itr;
+ iterator for traversing the set:
+ set_name.begin() - iterator pointing to the first element of my set
+ set-name.end() - iterator pointing to the position after the last element of set.
+
+//For each loop
+for(auto value: set_name){
+  cout<<value<<" ";
+}
+
+
+//DELETION 
+1. set_name.erase(value);  o(logN) - Time complexity
+2. set_name.erase(position);  o(logN) - Time complexity
+3. set_name.erase(start_pos,end_pos);  o(N) - Time complexity
+  above one [deletes elements from start pos including it,to end pos,excluding end pos]
+
+
+//MEMBER FUNCTION OF A SET CONTAINER:
+1. size()- used to get the size.
+2. max-size()- max no. of elements set can hold.whenever size reaches it,it increases its value itself.
+3. empty()- returns true if set is empty else false.
+4. clear()- removes all ele from set.
+5. find()- returns iterator to the element if present,else returns end iterator.
+6. count()- returns no.of occurences of the given element.returns either 1 or 0. 
+7. lower_bound()- returns an iterator to the specified element if present,else returns iterator to th element that is
+ just greater and present in set.if the value passed is greater than the maximum value of the set,it returns a iterator an end() iterator.
+8. upper_bound()- returns iterator to next greater value in the set.if the value passed is equal to or greater than the maximum value of the set,it returns a iterator an end() iterator.
+9. rbegin()- returns iterator to the first ele in the set in reverse order.
+10. rend()- returns iterator to the position after the last element of the set in the reverse order.
+
+
+  ***************
+How to erase just one sample of an element in multiset?
+--> take use of iterator instead of direct value   ms.erase(ms.find(value));

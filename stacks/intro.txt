@@ -1,0 +1,33 @@
+
+
+
+Two conditions:
+overflow:
+jitni stack ki capacity thi,if you cross that capacity,you hit the overflow condition.
+
+underflow:
+when no ele is present and you want to either access or delete the ele,you hit the underflow condtion.
+
+//STACKS USING ARRAYS
+if top index is==-1,then we are either in underflow or no ele are added yet.
+:we make a class of stacks.
+::we have array as a prop. ::we make capacity as a prop
+and ::we have top_index as a prop which initially points to -1.
+
+all these prop are private to the class,as you don't want anyone the access the array from outside the class.
+
+
+#when we want to push ele,we increase the top_idx by 1 and we add the 
+ele as array[top_idx]=ele.
+  
+#when you pop,you just take back the top _idx backward by subratcting -1;
+
+#if you want see if stack is full,check if top_idx==arr.size()-1;
+
+#if you want see if stack is empty,check if top_idx==-1
+
+
+//STACKS USING LINKED LIST
+head=top_ele.
+push==insertion at head  yeah top pe a jayega.
+pop==deletion at head  

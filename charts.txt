@@ -1,0 +1,15 @@
+line chart
+Bar chart
+Pie chart
+Histogram
+Table
+Graph
+scatter plot
+heat maps
+box plot
+area plot
+bubble plot
+sankey plot
+waffle chart
+waterfall chart
+word cloud

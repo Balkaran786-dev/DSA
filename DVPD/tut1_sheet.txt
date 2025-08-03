@@ -1,0 +1,31 @@
+Q1.
+Question 1: Steps to Accomplish the Task
+:Requirement Analysis: Define user needs and features (input location, output solar radiation).
+:Data Collection: Gather historical weather data, geographical attributes, and solar radiation data.
+:Data Preprocessing: Clean and prepare data (handle missing data, normalization).
+:Feature Engineering: Select relevant features (e.g., cloud cover, temperature) for the ML model.
+:Model Selection: Choose and train an ML/statistical algorithm for prediction (e.g., Random Forest, Neural Networks).
+:Web Application Development: Develop a GIS-enabled web interface for input and display of predictions.
+:Deployment and Testing: Test the system, deploy it on a web server, and ensure scalability.
+
+
+Question 2: Data Sources
+
+Satellite data (e.g., NASA, Copernicus)
+Weather stations (e.g., NOAA, local weather services)
+Historical solar radiation datasets (e.g., PVGIS, NSRDB)
+
+Question 3: Types of Data
+Geospatial Data: Latitude, longitude, elevation.
+Meteorological Data: Temperature, humidity, cloud cover.
+Time Series Data: Solar radiation over time.
+
+Question 4: What Can You Visualize?
+Solar radiation predictions on a map.
+Time-series charts of predicted radiation for specific locations.
+Heatmaps of solar potential across regions.
+
+Question 5: Which Part Requires Visualization?
+Input Visualization: Location input on a map.
+Output Visualization: Solar radiation predictions, heatmaps.
+Model Evaluation: Performance metrics like error rates and accuracy graphs.

@@ -1,0 +1,84 @@
+STL:- Standard template library
+
+#set of template classes for implementing commonly 
+used data structures and functions
+
+#it gives a lot of template classes for different data structures and functions
+so that we can directly use it in code without actually defining those.
+
+library of generic classes and functions
+
+why use? reuse well test components
+time savings
+
+Components of STL:
+ you can see from your linked list notes on VSCODE
+
+Types of containers:
+1.Sequence Containers: stores data in linear fashion ex:- vector,list,deque
+2.Associative Containers: use tree. Direct access set,mutiset,map,mutimap
+3.Derived Containers:Real world modeling ex,stack,queue,priority queue
+
+
+
+Sequenece containers:
+vector: random access - fast
+        insertion,deletion - fast 
+        Insertion at the end is fast.
+list :  random access - slow
+       dele/ insertion in middle - fast
+       dele/ insertion at end  - fast
+
+
+Associative:
+        all operations fast except Random access.
+
+
+Derived : Depends on data structure.
+
+
+Functions object:(Functor)
+In programming, a function object, often referred to as a functor, is an object that can be called 
+as if it were a function. In many programming languages, this is achieved by defining a special
+method that allows the object to behave like a function.
+
+In C++, a function object is usually created by overloading the operator().
+#include <iostream>
+using namespace std;
+
+class Multiplier {
+public:
+    Multiplier(int factor) : factor(factor) {}
+    int operator()(int x) const {
+        return factor * x;
+    }
+
+private:
+    int factor;
+};
+
+int main() {
+    Multiplier multiply_by_3(3);
+    cout << multiply_by_3(10) << endl;  // Output: 30
+    return 0;
+}
+
+more exmaple
+
+#include <iostream>
+using namespace std;
+
+class Add {
+public:
+    int operator()(int a, int b) const {
+        return a + b;
+    }
+};
+
+int main() {
+    Add add;
+    cout << "3 + 5 = " << add(3, 5) << endl;  // Output: 3 + 5 = 8
+    return 0;
+}
+
+

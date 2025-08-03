@@ -1,0 +1,101 @@
+1. Heat Map:-
+
+A heat map is a data visualization tool that uses color to represent 
+the magnitude of values in a dataset. The intensity of the color 
+indicates the magnitude, making it easy to identify patterns, trends,
+and outliers.
+
+
+2. Line chart:-
+A line chart is a type of data visualization used to display information as
+ a series of data points connected by straight lines. 
+ It is commonly used to track changes or trends over time or to 
+ compare multiple datasets.
+
+
+3. Bar chart:-
+A bar chart is a data visualization tool used to compare categories or groups of data.
+ It represents values with rectangular bars, where the length or height of each bar
+  corresponds to the data value it represents.
+
+  horizontal:
+  1.when category name is large.
+  2.focus is on comparison between categories rather than their numerical values.
+  3.large number of categories.
+
+  vertical:
+  1.focus on magnitude.
+  2.short category labels.
+
+
+4.pie chart:
+A pie chart is a circular statistical chart used to show proportions or 
+percentages of a whole. Each "slice" of the pie represents a category, 
+with the size of the slice corresponding to its proportion of the total.
+
+
+5.pareto chart:
+specialized bar chart,with bars arranged in desecending order.
+based on pareto principle (80/20) principle,whixh says 80% effect 
+comes from 20 % causes.
+
+
+6.histogram
+A histogram is a graphical representation of the distribution of a dataset. 
+It uses bars to show the frequency of data points falling within specified ranges, 
+called bins. Unlike a bar chart, a histogram groups data into intervals and is ideal 
+for analyzing continuous data.
+
+
+7.Bubble chart:
+A bubble chart is a data visualization tool that displays three dimensions of data simultaneously 
+using circles (bubbles). It is an extension of a scatter plot, where an additional
+ variable determines the size of the bubbles.
+
+
+8.A scatter plot is a type of data visualization used to show the relationship between
+ two variables. It plots data points on a two-dimensional graph, with one variable on
+  the x-axis and the other on the y-axis.
+
+9.Area plot:
+An area plot is a data visualization tool used to represent quantitative data, 
+similar to a line chart but with the area under the line filled in with color or 
+shading. It is typically used to emphasize trends over time or show the contribution 
+of individual parts to a whole.n an area plot, the area under the curve represents the cumulative total 
+of the values over time or across categories. 
+
+
+10.Funnel chart:
+A funnel chart is a specialized data visualization tool used to represent 
+stages in a process and show the decline in values at each stage. 
+The chart is typically shaped like a funnel, with the largest values at 
+the top and the smallest values at the bottom, illustrating how data progressively
+ narrows down through each stage.
+
+
+11.Stacked Bar chart:
+Compares the total value of categories while showing how 
+different sub-groups contribute to that total.
+
+
+A 100% stacked bar chart is a variation of the stacked bar chart 
+where each bar represents 100% of a category, and the segments within the
+ bar show the proportional contribution of sub-groups to the whole. 
+
+
+12. Violin plot is a data visualization that combines aspects of both a box plot 
+and a kernel density plot. It is used to display the distribution of a dataset, 
+showing its probability density at different values. The plot is particularly useful 
+for comparing the distribution of several categories or groups within the dataset.
+
+
+13.A swarm plot is a type of data visualization used to display the distribution of 
+categorical data by plotting individual data points on a 2D plane. It is similar to
+a scatter plot but specifically designed for categorical data, where each point is
+positioned along the x-axis based on its category and along the y-axis based on its value.
+
+
+14.A Sankey diagram is a type of chart used to show how things (like money, energy, 
+or resources) move between different stages or categories. It uses arrows, and 
+the thicker the arrow, the bigger the amount being moved. It helps you easily 
+see where things are coming from and where they’re going.

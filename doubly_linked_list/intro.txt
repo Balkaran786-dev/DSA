@@ -1,0 +1,20 @@
+Blocks of memory that are called nodes
+each node will point to the next node and the previous node.
+so,every node contain two pointers.
+
+
+#advantages of doubly linked list over singly linked list.
+1.Traversal can be done both ways. head to last node and also we can traverse from last to head node.
+2.insertion and deletion becomes more efficient and easier.
+
+#disadvantage:
+1.extra space for previous node pointer.
+
+#implementation
+____________________
+| prev | val | next|
+---------------------
+val is value stored in the node
+prev pointer is pointing to the previous node.
+next pointer is pointing to the next node.
+        
