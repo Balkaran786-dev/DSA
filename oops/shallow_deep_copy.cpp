@@ -51,7 +51,7 @@ public:
     student(student &s){
         this->name=s.name;
         cgpaptr=new double;  //new memory allocate kardi
-        *(this->cgpaptr)=*(s.cgpaptr);  //ans uss new memory pe same value store krdi
+        *(this->cgpaptr)=*(s.cgpaptr);  //and uss new memory pe same value store krdi
     }    
 };
 class X{

@@ -1,0 +1,74 @@
+Q. What is a subclass?
+. Define a superclass?
+
+A subclass is a class that inherits properties (variables) and behaviors (methods) from another class.
+It is also called a derived class or child class.
+
+A superclass is a class that is inherited from by another class.
+It is also called a base class or parent class.
+
+
+They are similar in purpose but different in rules.
+
+Similarity:
+Both cannot be instantiated directly.
+Both are used to achieve abstraction (hide implementation details).
+Both can declare methods that must be implemented by child classes.
+
+Difference:
+Feature	Abstract Class	Interface
+
+Methods:	 Can have both implemented and pure virtual (unimplemented) methods	                 Can have only pure virtual methods (in C++ style)
+Variables:	Can have member variables	               Typically no data members (only constants, if any)
+Inheritance:	 A class can inherit only one abstract class (single inheritance in C++)	          A class can implement multiple interfaces (multiple inheritance)
+Use case:	Used when classes share a common base with some shared code           	Used when classes share only behavior, no shared code
+
+
+How do you create an instance of an abstract class?
+ChatGPT said:
+You cannot create an instance (object) of an abstract class directly because it has at least one pure virtual function (in C++) or unimplemented method (in other languages).
+How to use it instead:
+You create an instance of a derived (sub)class that implements all the pure virtual functions of the abstract class.
+Then you can use that instance through a base class pointer or reference.
+
+
+39. What is a final variable?
+A final variable (Java) or const (C++) is a variable whose value is fixed after initialization. It cannot be reassigned, helping make the code more predictable.
+Example: const int MAX = 100;
+
+40. What is meant by an exception?
+An exception is an abnormal event or error that happens at runtime, like division by zero or file not found, that interrupts the normal program flow.
+
+
+41. Define exception handling.
+Exception handling is the mechanism to detect, handle, and recover from runtime errors using constructs like try, catch, throw (and finally in some languages).
+
+
+42. Is an error the same as an exception?
+No.
+Error =  serious issue the program usually cannot fix (e.g., hardware failure, JVM crash).
+Exception =  issue that can be caught and handled to prevent program termination.
+
+
+43. What is a try-catch block?
+A try-catch block lets you run risky code in the try section and handle errors in the catch section without crashing the program.
+
+
+44. What is a finally block?
+A finally block executes code after try/catch regardless of success or failure, often for resource cleanup (closing files, database connections).
+
+
+45. What is the method ‘finalize’ used for?
+finalize() is a method called by the Garbage Collector before destroying an object, allowing you to free resources.
+
+
+46. What is Garbage Collection, and how does it work?
+Garbage Collection (GC) automatically reclaims memory by finding and deleting objects no longer referenced by the program, preventing memory leaks.
+can recalims the Dynamic memory too.
+
+
+49. What are the limitations of OOPs?
+More memory and CPU usage
+Slower than procedural programming for simple tasks
+Requires more design effort
+Can lead to overly complex hierarchies if misused.

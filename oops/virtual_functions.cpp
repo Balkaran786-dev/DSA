@@ -2,6 +2,8 @@
 // They can be redefined in the derived class. 
 
 //virtuality will be inherited..
+
+
 #include<iostream>
 using namespace std;
 

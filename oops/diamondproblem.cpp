@@ -38,7 +38,7 @@
 /*The diamond problem is solved by declaring the common base class 
 (A) as a virtual base class when B and C inherit from A. This ensures 
 that only one shared instance of A is created, regardless of how
- many times it is indirectly inherited through B and C.*/
+many times it is indirectly inherited through B and C.*/
 
 //how it works:
 //When B and C are declared to inherit A virtually, the compiler ensures that D does not create multiple instances of A.

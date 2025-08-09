@@ -42,6 +42,9 @@ int main(){
     return 0;
 }
 
+//when we initialise a pointer variable,we need to delete it manually...
+// if we don't do that, then it will lead to memory leak.
+// a lot of space will be remained as it is,it can't be pointed as it is not free.
 
 //when a destructor is called private:
 
@@ -57,7 +60,7 @@ public:
     static void destroy(MyClass* obj) {
         delete obj; // Calls the private destructor
     }
-};
+}; 
 
 int main() {
     MyClass* obj = new MyClass();
