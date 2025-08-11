@@ -15,7 +15,6 @@ public:
              cnt+=mp[sum-k];
              mp[sum]++;
         }
-
         return cnt;
     }
 };

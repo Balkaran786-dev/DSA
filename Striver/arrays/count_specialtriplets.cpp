@@ -15,7 +15,6 @@ public:
             int right=mp_right[nums[i]*2];
             ans=(ans+(1LL*left*right)%MOD)%MOD;
             mp_left[nums[i]]+=1;
-            
         }
         return ans;
     }

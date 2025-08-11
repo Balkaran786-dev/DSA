@@ -1,4 +1,5 @@
 //the concept is equal to leaders in the array vala question
+
 class Solution {
 public:
     int maximumSwap(int num) {

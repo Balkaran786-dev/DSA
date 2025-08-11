@@ -21,9 +21,6 @@ public:
 // here in one pass, we can get to know about the majority ele..
 
 
-
-
-
 //Better solution  
 //o(n) time in avg and best case and o(n^2) in worst case
 //if we used ordered_map , time is o(nlogn)
@@ -41,8 +38,6 @@ public:
 };
 
 
-
-
 //optimal solution...
 //Moore's voting algo ...
 //basic intiution is that , an elemnt that occurs more than n/2 times will not be cancelled.
@@ -55,8 +50,6 @@ public:
 //if at the end , you get cnt =0 , that means no majority ele exist,
 // if at the end, you get cnt!=0 , that means ele can be a majority ele, if it is given that majority ele always exist, then ele is surely the ans,
 // otherwise you need to check by iterating the array again that is it correct to say ele as the majority ele.
-
-
 
 class Solution {   //o(1) space   o(n)- time
 public:
@@ -79,4 +72,3 @@ public:
         return ele; //cnt will akways be not zero here because it is given in the question that the majority element always exists
     }
 };
-

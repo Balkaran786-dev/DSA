@@ -3,7 +3,8 @@
 // as you find the required elements that sum up to target, put their indices in a vector 
 // and return it.
 
-//using hashing..
+
+//using hashing..k
 // o(n) time and space
 // at every index , calculate target-nums[i], find this in map,if presnt 
 // return {mp[target-num[i]],i},
