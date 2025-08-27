@@ -3,22 +3,19 @@ public:
     void fill_map(TreeNode* root,unordered_map<TreeNode*,TreeNode*> &mp,int start,TreeNode* &startNode){
         if(root==NULL) return;
         if(root->val==start) startNode=root;
-
         if(root->left){
             mp[root->left]=root;
             fill_map(root->left,mp,start,startNode);
         }
-        
         if(root->right){
             mp[root->right]=root;
            fill_map(root->right,mp,start,startNode);
         }
-        
         return;
     }
     
     int amountOfTime(TreeNode* root, int start) {
-        if(root->left==NULL && root->right==NULL) return 0;
+       if(root->left==NULL && root->right==NULL) return 0;
         unordered_map<TreeNode*,TreeNode*> mp;
         mp[root]=NULL;
         TreeNode* startNode=NULL;
@@ -27,7 +24,7 @@ public:
         queue<TreeNode*> qu;
         int time=0;
         qu.push(startNode);
-        
+         
         while(!qu.empty()){
             bool infect_flag=false;
             int nodes_same_dist=qu.size();

@@ -31,3 +31,26 @@ class Solution {
     }
 };
 
+//tabulation
+
+int MOD=1e9+7;
+
+int findWays(vector<int>& arr, int target)
+{
+	// Write your code here.
+	    int n=arr.size();
+        vector<vector<int>> dp(n+1,vector<int> (target+1,0));
+        dp[n][0]=1;
+        for(int idx=n-1;idx>=0;idx--){
+            for(int j=target;j>=0;j--){
+                int cnt=(dp[idx+1][j])%MOD;
+
+                if(j>=arr[idx]){
+                    cnt=(cnt+(dp[idx+1][j-arr[idx]])%MOD)%MOD;
+                }
+                dp[idx][j]=cnt;
+            }
+        }
+
+        return dp[0][target];
+}

@@ -1,4 +1,5 @@
 //most optimised.
+//o(nlog(log(n)))+o(n) time
 // other approaches are given in copy
 class Solution {
 public:

@@ -15,6 +15,7 @@ public:
     next=NULL;
    }
 };
+
 class queue{
      Node* head;
      Node* tail;

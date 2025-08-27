@@ -207,12 +207,12 @@ public:
 void delete_duplicates(Node* &head){
     Node* temp=head;
     while(temp!=NULL){
-        while( temp->next!=NULL && temp->next->val==temp->val){
-            Node* temp1=temp->next;
-            temp->next=temp1->next;
-            free(temp1);
+        Node* curr = temp->next;
+        while(curr!=NULL && curr->val==temp->val){
+            curr=curr->next;
         }
-        temp=temp->next;
+        temp->next=curr;
+        temp=curr;
     }
 }
 int main(){

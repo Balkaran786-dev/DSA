@@ -4,7 +4,7 @@ vector<int> printingLongestIncreasingSubsequence(vector<int> arr, int n) {
 	for(int i=0;i<n;i++){
 		backtrack[i]=i;  //first of all, all index will have the starting of LIS from them selves only...
 	}
-	  
+
 	vector<int> dp(n,1);
 	for(int i=1;i<n;i++){
 		int maxi=0;

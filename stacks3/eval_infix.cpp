@@ -8,8 +8,9 @@
   
   if we approach a '(' bracket,push it normally,but if we approach ')',evaluate till we get '(' on 
   top of stack 2.then pop out '(' also from stack.
-
 */
+
+
 #include<iostream>
 #include<string>
 #include<stack>
@@ -183,3 +184,88 @@ int main(){
 //     cout<<infix_eval(str);
 //     return 0;
 // }
+
+
+
+
+//to handle more than 2 digit numbers
+#include <iostream>
+#include <string>
+#include <stack>
+#include <cmath>  // for pow
+using namespace std;
+
+int calu(int v1, int v2, char ch) {
+    if (ch == '^') return pow(v1, v2);
+    else if (ch == '+') return v1 + v2;
+    else if (ch == '*') return v1 * v2;
+    else if (ch == '/') return v1 / v2;
+    else if (ch == '%') return v1 % v2;
+    else return v1 - v2;  // for '-'
+}
+
+int precedence(char ch) {
+    if (ch == '^') return 3;
+    else if (ch == '*' || ch == '/' || ch == '%') return 2;
+    else if (ch == '+' || ch == '-') return 1;
+    else return -1;
+}
+
+int eval(string str) {
+    stack<int> nums;
+    stack<char> ops;
+
+    for (int i = 0; i < str.size(); i++) {
+        char ch = str[i];
+
+        // If digit found, read full number
+        if (isdigit(ch)) {
+            int num = 0;
+            while (i < str.size() && isdigit(str[i])) {
+                num = num * 10 + (str[i] - '0');
+                i++;
+            }
+            nums.push(num);
+            i--; // Adjust because for loop will increment i
+        }
+        else if (ch == '(') {
+            ops.push(ch);
+        }
+        else if (ch == ')') {
+            while (ops.top() != '(') {
+                char op = ops.top(); ops.pop();
+                int v2 = nums.top(); nums.pop();
+                int v1 = nums.top(); nums.pop();
+                nums.push(calu(v1, v2, op));
+            }
+            ops.pop(); // remove '('
+        }
+        else if (ch == ' ') {
+            continue; // skip spaces
+        }
+        else {
+            while (!ops.empty() && precedence(ops.top()) >= precedence(ch)) {
+                char op = ops.top(); ops.pop();
+                int v2 = nums.top(); nums.pop();
+                int v1 = nums.top(); nums.pop();
+                nums.push(calu(v1, v2, op));
+            }
+            ops.push(ch);
+        }
+    }
+
+    while (!ops.empty()) {
+        char op = ops.top(); ops.pop();
+        int v2 = nums.top(); nums.pop();
+        int v1 = nums.top(); nums.pop();
+        nums.push(calu(v1, v2, op));
+    }
+
+    return nums.top();
+}
+
+int main() {
+    string str = "10+(25*(3-1))+245";
+    cout << eval(str);
+    return 0;
+}

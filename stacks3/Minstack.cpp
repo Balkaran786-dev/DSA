@@ -3,6 +3,8 @@
   in another stack and then you pop out it.In this way,you maintain an additional stack of size n.
   */
 
+
+
 /*approach 2 -o(n) for space complexity and o(1) for time complexity: you need to push[7,4,5,2,9,8,1]  
   you need to maintain two stack,1. original stack that contains original elements. 2.side stack whose top gives us the min of all the elements stored in the stack.
 
@@ -48,16 +50,14 @@ class Minstack{
             st.push(val);
             min_ele=val;
         }
-        else if(val>min_ele){
+        else if(val>=min_ele){
             st.push(val-min_ele);
         }
         else if(val<min_ele){
             st.push(val-min_ele);
             min_ele=val;
         }
-        else if(val==min_ele){
-            st.push(val-min_ele);
-        }
+       
       }
      
      void pop_ele(){

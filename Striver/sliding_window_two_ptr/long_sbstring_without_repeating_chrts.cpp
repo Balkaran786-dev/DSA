@@ -47,7 +47,7 @@ public:
         while(hi<n){
              if(mp.find(s[hi])!=mp.end()){  //if the character is already discovered...
                 int idx=mp[s[hi]];
-                if(idx>=lo){   //means that character is present in the current substring
+                if(idx>=lo){  //take case like abcdceaf  ans-5 //means that character is present in the current substring
                   lo=idx+1;
                 }  
                 else{   //means that character is present in the map but it is not present in the current substring so, we can inckude it

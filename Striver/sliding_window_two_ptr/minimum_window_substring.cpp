@@ -50,7 +50,7 @@ public:
         int start_idx=-1;
         int n=s.size(),m=t.size();
         if(m>n) return "";
-        int cnt=0;
+        int cnt=0;  //how many characters of t are present in the current substring..
         int lo=0,hi=0;
 
         unordered_map<char,int> mp;

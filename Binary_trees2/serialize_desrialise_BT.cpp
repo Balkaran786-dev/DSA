@@ -1,17 +1,11 @@
-/*
-
-In Binary tree,if we have a preoder traversal,we won't be able to guess
+/*In Binary tree,if we have a preoder traversal,we won't be able to guess
 whether the node will be in left or right subtree,but if we have level order 
 it will be easy for us to detect.Also at place  of NULL we can insert "#" or anything
 else to just remind us that if it comes,that means there is an empty spot ,so we do that child as NULL,
-
 In n-arry,we can't use level order,beacuse we don't know ek node ke kitne child ho skte hain
 ,we need to store how many child nodes it has,so our urvi's approach is okay for that,there we did preoder with urvi.
-
 ## str.find(substring,i): to find subtring first occurence in str from ith index.
 ## str.substr(i,L): to create subtring of str from ith index of length L,including that ith index character also.
-
-
 */
 #include<bits/stdc++.h>  //given on leetcode
 using namespace std;
@@ -103,7 +97,6 @@ public:
         }
         return root_node;
     }
-   
 };
 void levelorder_traversal(TreeNode* root){
     if(root==NULL){

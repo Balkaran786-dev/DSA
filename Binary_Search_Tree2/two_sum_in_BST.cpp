@@ -60,7 +60,9 @@ class BSTIterator {
             return !st.empty();
         }
     };
-    // time would be same as o(n) as our previous approach, but space will be o(h),..
+
+    // time would be same as o(n) as our previous approach, but space will be o(h),....
+
     class Solution {
     public:
         bool findTarget(TreeNode* root, int k) {

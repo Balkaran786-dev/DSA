@@ -92,6 +92,7 @@ class Solution{
 // becuase im reducing my n, so for loop mein jo n use hua hai voh bhi reduce hota rhega.
 
 
+
 	     for(int i=2;i<=N;i++){ // for N=780 , this loop will run for 13 times only,
                                 /*
                                 2|780  -> yeh right vala hamesha change hota rhega...

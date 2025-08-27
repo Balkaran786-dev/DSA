@@ -1,4 +1,5 @@
 //similar to binary subarrys sum
+
 class Solution {
 public:
     int subarray_sum(vector<int>& nums, int k){

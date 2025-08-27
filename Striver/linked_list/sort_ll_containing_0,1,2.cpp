@@ -5,8 +5,6 @@
 
 
 
-
-
 //optimal  time-o(n) traversing only single time
 Node* sortList(Node *head){
     // Write your code here.

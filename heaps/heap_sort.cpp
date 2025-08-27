@@ -26,7 +26,7 @@ void heap_sort(int BT[],int n){
     for(int i=n/2;i>0;i--){  //i ke neeche vale sare nodes ko heapify karunga,means maxheap mein arrange karunga
         heapify(BT,n,i);
     }
-    
+    \
     //2. keep deleting elements from the BT until size becomes zero.
     //we r originaly not deleting ele,but storing them at the last node and decreasing our array size.
     for(int i=n;i>0;i--){

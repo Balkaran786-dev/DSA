@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
 class queue{
      vector<int> v;
      int cs;

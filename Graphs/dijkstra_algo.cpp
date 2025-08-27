@@ -1,60 +1,57 @@
-// #include<bits/stdc++.h>
-// #define pp pair<int,int> 
-// using namespace std;
-// vector<list<pp>> graph;
-// void add_edge(int u,int v,int wt){
-//     graph[u].push_back({v,wt});
-//     graph[v].push_back({u,wt});
-// }
-// unordered_map<int,int> dijkstra(int n){
-//     priority_queue<pp,vector<pp>,greater<pp>> pq;  //dist,node
-//     unordered_set<int> vis;
-//     vector<int> via(n);
-//     unordered_map<int,int> mp;  //node,dist
+#include<bits/stdc++.h>
+#define pp pair<int,int> 
+using namespace std;
+vector<list<pp>> graph;
 
+void add_edge(int u,int v,int wt){
+    graph[u].push_back({v,wt});
+    graph[v].push_back({u,wt});
+}
 
-//     for(int i=1;i<n;i++){
-//         mp[i]=INT16_MAX;
-//     }
+unordered_map<int,int> dijkstra(int n){
+    priority_queue<pp,vector<pp>,greater<pp>> pq;  //dist,node
+    unordered_set<int> vis;
+    vector<int> via(n);
+    unordered_map<int,int> mp;  //node,dist
 
-//     pq.push({0,0}); //we have considered source as 0,so dist of 0 from source is 0
-//     mp[0]=0;
+    for(int i=1;i<n;i++){
+        mp[i]=INT16_MAX;
+    }
 
-//     while(!pq.empty()){  //o(Vlogv + Elogv)
-//         pp curr=pq.top();  
-//         if(vis.count(curr.second)){
-//             pq.pop();
-//             continue;
-//         }
-//         vis.insert(curr.second);
-//         pq.pop();
-//         for(auto neighbour:graph[curr.second]){
-//             if(!vis.count(neighbour.first) && mp[neighbour.first]>mp[curr.second]+neighbour.second){  //relaxation step
-//                 pq.push({mp[curr.second]+neighbour.second,neighbour.first});
-//                 mp[neighbour.first]=mp[curr.second]+neighbour.second;
-//                 via[neighbour.first]=curr.second;
-//             } 
-//         }
+    pq.push({0,0}); //we have considered source as 0,so dist of 0 from source is 0
+    mp[0]=0;
 
-//     }
-//     return mp;
-// }
-// int main(){
-//     int n,m;
-//     cin>>n>>m;
-//     graph.resize(n);
-//     while(m--){
-//        int s,d,wt;
-//        cin>>s>>d>>wt;
-//        add_edge(s,d,wt);
-//     }
+    while(!pq.empty()){  //o(Vlogv + Elogv)
+        pp curr=pq.top();  
+        vis.insert(curr.second);
+        pq.pop();
+        for(auto neighbour:graph[curr.second]){
+            if(!vis.count(neighbour.first) && mp[neighbour.first]>mp[curr.second]+neighbour.second){  //relaxation step
+                pq.push({mp[curr.second]+neighbour.second,neighbour.first});
+                mp[neighbour.first]=mp[curr.second]+neighbour.second;
+                via[neighbour.first]=curr.second;
+            } 
+        }
 
-//     unordered_map<int,int> sd=dijkstra(n);
-//     for(auto ele:sd){
-//         cout<<ele.first<<" -> "<<ele.second<<endl;
-//     }
-//     return 0;
-// }
+    }
+    return mp;
+}
+int main(){
+    int n,m;
+    cin>>n>>m;
+    graph.resize(n);
+    while(m--){
+       int s,d,wt;
+       cin>>s>>d>>wt;
+       add_edge(s,d,wt);
+    }
+
+    unordered_map<int,int> sd=dijkstra(n);
+    for(auto ele:sd){
+        cout<<ele.first<<" -> "<<ele.second<<endl;
+    }
+    return 0;
+}
 
 
 

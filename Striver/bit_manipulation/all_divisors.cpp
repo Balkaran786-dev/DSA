@@ -2,7 +2,6 @@
 // time->o(sqrt(n));
 // space->o(sqrt(n));
 
-
 class Solution {
   public:
     void print_divisors(int n) {
@@ -16,11 +15,10 @@ class Solution {
                 }
             }
         }
-        
+
         int sz=vec.size();
         for(int i=sz-1;i>=0;i--){
             cout<<vec[i]<<" ";
         }
     }
 };
-

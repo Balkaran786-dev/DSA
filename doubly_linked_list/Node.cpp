@@ -59,7 +59,7 @@ public:
     }
 
     void insert_at_k(int val,int k){  //assuming 1 based indexing
-          Node* new_node=new Node(val);
+            Node* new_node=new Node(val);
            if(k==1){
             insertion_at_start(val);
            }
@@ -88,7 +88,7 @@ public:
         }
         else{
             head->prev=NULL;
-        }
+        }   
         free(temp);
     }
     void delete_at_end(){

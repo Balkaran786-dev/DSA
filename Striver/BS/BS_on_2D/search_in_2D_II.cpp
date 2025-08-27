@@ -1,7 +1,5 @@
 //optimal o(n+m) time 
  
-
-
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
@@ -15,5 +13,5 @@ public:
             else row++;
         }
         return false;
-    }
+    }  
 };

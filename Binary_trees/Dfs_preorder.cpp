@@ -17,20 +17,16 @@ void preorder_traversal(Node* root_node){
   if(root_node==NULL) return;
    stack<Node*> st;
    Node* curr=root_node;
-   
    while(curr!=NULL || !st.empty()){
-    
      while(curr!=NULL){
         cout<<curr->value<<" ";
         if(curr->right) st.push(curr->right);
         curr=curr->left;
      }
-
      if(!st.empty()){
           curr=st.top();
           st.pop();
      }
-     
    }
 }
 // void preorder_traversal(Node* root_node){

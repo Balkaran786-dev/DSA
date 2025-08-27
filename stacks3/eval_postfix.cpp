@@ -23,6 +23,7 @@ int calu(int v1,int v2,char ch){
         return v1-v2;
     }
 }
+
 int calc_postfix(string str){
     stack<int> st;  //to store the operands
     for(int i=0;i<str.size();i++){

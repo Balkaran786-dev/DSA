@@ -1,7 +1,6 @@
 //1st solution can be recursive..
 
 
-
 //2nd solution using bitwise operator.explained in copy   o(n*2^n) both space and time
 class Solution {
 public:

@@ -7,7 +7,7 @@ class stack{
     public:
     stack(int c){
         capacity=c;
-        arr=new int(c);  //dynamic memory allocation
+        arr=new int[c];  //dynamic memory allocation
         top=-1;
     }
 

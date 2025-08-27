@@ -1,14 +1,15 @@
-
 class Solution {
 public:
     long long sumDigitDifferences(vector<int>& nums) {
         int n=nums.size();
         int digits=0;
         int val=nums[0];
+    
         while(val!=0){
             val/=10;
             digits++;
         }
+
         long long cnt=0;
         for(int i=0;i<digits;i++){
             vector<int> freq(10,0);

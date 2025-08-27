@@ -4,7 +4,7 @@
 // return 0 if this value = m otherwise return 1 if value < m,
 
 // if you got 2, that means you can neglect the right half, hence hi=mid-1;
-// if you git 0 return mid
+// if you got 0 return mid
 // if u got 1, lo=mid+1;
 
 

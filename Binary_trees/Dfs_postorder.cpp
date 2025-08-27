@@ -26,16 +26,13 @@ void postorder_traversal(Node* root){
     Node* node=st1.top();
     st1.pop();
     st2.push(node);
-
     if(node->left) st1.push(node->left);
     if(node->right) st1.push(node->right);
    }
-
    while(!st2.empty()){
     cout<<st2.top()->value<<" ";
     st2.pop();
    }
-
 }
 // void postorder_traversal(Node* root_node){
 //     //Base case. when we try to go ahead of leaf node

@@ -100,11 +100,9 @@ public:
 class LinkedList{
 public:
     Node* head;
-
     LinkedList(){
         head=NULL;
     }
-
     void insert(int val){
         Node* new_node=new Node(val);
         if(head==NULL){
@@ -117,7 +115,6 @@ public:
         }
         temp->next=new_node;
     }
-
     void display(){
         Node* temp = head;
         while(temp!=NULL){
@@ -126,8 +123,8 @@ public:
         }
         cout<<"NULL"<<endl;
     }
-
 };
+
 bool cycle_detect(Node* &head){
     Node* slow=head;
     Node* fast=head;
@@ -143,6 +140,7 @@ bool cycle_detect(Node* &head){
     return false;   //agar uuper vala loop break hogaya matlab,
                   //there exist some NULL,hence there would be no cycle present in the ll.
 }
+
 void cycle_removal(Node* &head){
     Node* fast=head;
     Node* slow=head;

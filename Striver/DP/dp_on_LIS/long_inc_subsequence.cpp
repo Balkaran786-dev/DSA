@@ -117,7 +117,6 @@ int LIS(vector<int> &heights, int n){
 int LIS(vector<int> &heights, int n){	
 	// Write your code here.
 	vector<int> dp(n,1);
-	// dp[i][j] gives us the LIS from index i , if the prev_ele is on index j...
 	for(int i=1;i<n;i++){
 		int maxi=0;
 		for(int j=0;j<i;j++){
@@ -156,7 +155,5 @@ int longestIncreasingSubsequence(int arr[], int n)
             v[it - v.begin()]=arr[i];
         }
     }
-
-    return v.size();  //this v itself is not a LIS, but it length defines what max IS we can have..
-    
+    return v.size();  //this v itself is not a LIS, but its length defines what max LIS we can have..
 }

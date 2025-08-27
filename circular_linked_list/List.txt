@@ -41,6 +41,7 @@ for(auto itr=list1.begin();itr!=list1.end();itr++){
     cout<<*itr<<" ";
 }cout<<endl; 
 
+
 #reverse Traversal
 for(auto itr=list1.rbegin();itr!=rend();itr++){
     cout<<*itr<<" ";
@@ -52,6 +53,7 @@ for(auto itr=list1.rbegin();itr!=rend();itr++){
 list1.insert(itr,value)- insert value before the position of the itr.
 list1.insert(itr,count,value)- insert value count no. of times before the position of the itr.
 list1.insert(itr,start_itr,end_itr)- insert values from [start_itr to end_itr) (but doesn't include the elemnt on end_itr) before the position of itr.
+
 
 
 #DELETION

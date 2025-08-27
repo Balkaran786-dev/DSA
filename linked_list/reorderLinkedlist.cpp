@@ -13,11 +13,9 @@ public:
 class LinkedList{
 public:
     Node* head;
-
     LinkedList(){
         head=NULL;
     }
-
     void insert(int val){
         Node* new_node=new Node(val);
         if(head==NULL){
@@ -39,8 +37,8 @@ public:
         }
         cout<<"NULL"<<endl;
     }
-
 };
+
 void reorder_LinkedList(Node* &head){
        //can check if a given linked list has at least 3 nodes.
 

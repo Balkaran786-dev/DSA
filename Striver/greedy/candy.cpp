@@ -3,11 +3,9 @@
 
 
 //1st solution
-
 // pehle left neighbours ko dekhkar  candies do
 // then right neighbours ko dekhar ,
 // akhri mein jo har index mein dono mein se bada hoga usko sum mein add krlo
-
 // class Solution {  //o(n+n)-time  o(n)-space
 // public:
 //     int candy(vector<int>& ratings) {

@@ -46,8 +46,7 @@
 //     }
 // };
 
-//pop effecient
-
+//pop effecient.
 class MyStack {   
 public:
     queue<int> qu;

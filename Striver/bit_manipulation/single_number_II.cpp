@@ -3,7 +3,6 @@
 //o(m) space
 
 
-
 //2nd solution using bits manipulation  o(32*N) time , o(1) space
 // for ex we have,i have exolained in copy. and code given in copy.
 
@@ -30,6 +29,7 @@ public:
 };
 
 // how this better than 2nd because there it always take 32, but here logn can't become 32 for that n=2^32 not possible
+
 
 
 

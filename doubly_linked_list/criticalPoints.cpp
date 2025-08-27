@@ -85,6 +85,7 @@ vector<int> distance_Between_Critical_pts(Node* tail){
 
       return ans;
 }
+
 /// see your own solution at leetcode ********  mindist and max dist between critical pounts 
 int main(){
     doubly_linked_list dll;

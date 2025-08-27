@@ -7,6 +7,7 @@
 //front:returns the first element of queue.
 //size: return no. of elements of queue
 
+
 #include<iostream>
 #include<deque>
 using namespace std;
